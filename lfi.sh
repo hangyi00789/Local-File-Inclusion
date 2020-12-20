@@ -33,7 +33,7 @@ res=$(echo "$result" | grep -o '[200]\+')
 echo -e "\e[1;35m Scanning site:: $site/$LFI \e[0m"
 if [[ $res1 == $res ]];then
 echo -e "\e[1;35m LFI scan Found:: $site/$LFI \e[0m"
-#exit
+exit
 else
 echo -e "\e[1;31m Not found[×] \e[0m"
 fi 
